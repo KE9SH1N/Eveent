@@ -1,0 +1,92 @@
+.formContainer{
+    margin-top: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    form{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+        
+        span{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23.44px;
+            margin-bottom: 41px;
+        }
+        input{
+            border: var(--inputBorderBox);
+            width: 350px;
+            height: 40px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+
+            &::placeholder{
+                font-family:'Inter';
+                font-weight: 300;
+                font-size: 12px;
+                text-transform: capitalize;
+                line-height: 14.52px;
+                color: var(--loginPlaceholderText);
+            }
+        }
+
+        button{
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+            width: 350px;
+            height: 40px;
+            background-color: var(--loginButton);
+            color: var(--white);
+            
+        }
+
+    }
+
+    .formBottomContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h5 {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            color: var(--black);
+            margin-bottom: 18px;
+        }
+
+        .formSocialIcons{
+            .icon{
+                border: var(--loginSoicialIconBorder);
+                padding: 4px;
+                margin-right: 33px;
+                margin-bottom: 21px;
+                font-size: 40px;
+                &.facebook{
+                    margin-left: 33px;
+                    color: var(--facebook);
+                }
+                &.googlePlus{
+                    color: var(--googlePlus);
+                }
+                &.twitter{
+                    color: var(--twitter);
+                }
+            }
+        }
+        .regLink{
+            text-transform: capitalize;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-style: 12px;
+            color: var(--loginLinkText);
+        }
+    }
+
+    
+}
