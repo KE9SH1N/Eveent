@@ -1,0 +1,40 @@
+.cityContainer{
+    .cityContents{
+        padding: 0px 263px;
+        padding-top: 100px;
+        h4{
+            font-family: 'Inter',sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--black);
+            text-transform: capitalize;
+        }
+        .gridContainer{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            margin-top: 32px;
+            margin-right: -60px;
+            .gridItem{
+                h5{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: var(--black);
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                }
+                ul{
+                    li{
+                        margin-bottom: 12px;
+                        span{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 300;
+                            font-size: 13px;
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
