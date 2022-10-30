@@ -1,0 +1,109 @@
+.searchContainer{
+    .searchContents{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 70px;
+
+        .searchbyCategory{
+            width: 209px;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid var(--searchFilterBox);
+            border-radius: 4px;
+            background-color: var(--searchFilterBox);
+            margin-right: 40px;
+            cursor: pointer;
+            .icon{
+                //margin-right: 16px;
+                &.bar{
+                    font-size: 25px;
+                }
+            }
+            span{
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--black);
+                text-transform: capitalize;
+            }
+        }
+
+        .searchbyLocation{
+            width: 209px;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid var(--searchFilterBox);
+            border-radius: 4px;
+            background-color: var(--searchFilterBox);
+            margin-right: 40px;
+            cursor: pointer;
+            .icon{
+                //margin-right: 16px;
+                &.location{
+                    font-size: 25px;
+                }
+            }
+            span{
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--black);
+                text-transform: capitalize;
+            }
+        }
+
+        .searchbyDate{
+            width: 209px;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid var(--searchFilterBox);
+            border-radius: 4px;
+            background-color: var(--searchFilterBox);
+            margin-right: 40px;
+            cursor: pointer;
+            .icon{
+                //margin-right: 16px;
+                &.calendar{
+                    font-size: 25px;
+                }
+            }
+            input{
+                font-family: 'Inter', sans-serif;
+                width: 130px;
+                height: 35px;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 5px;
+
+                &::placeholder{
+                    text-align: center;
+                }
+            }
+        }
+
+        button{
+            width: 53px;
+            height: 53px;
+            border-radius: 3px;
+            background-color: var(--navbar);
+            cursor: pointer;
+
+            .icon {
+                &.calendar{
+                    font-size: 25px;
+                    color: var(--SearchIcon);
+                }
+            }
+        }
+
+        
+    }
+}
