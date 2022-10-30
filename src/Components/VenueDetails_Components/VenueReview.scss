@@ -1,0 +1,82 @@
+.venuereviewContainer{
+    padding: 0px 401px;
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--black);
+        margin-bottom: 32px;
+        text-transform: capitalize;
+        }
+    
+    .viewMore{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 96px;
+        button {
+            text-transform: capitalize;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            color: var(--navbarText);
+            background-color: transparent;
+        }
+    }
+    .venuereviewContent{
+        margin-bottom: 32px;
+        p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                color: var(--lightText);
+                text-transform: capitalize;
+            }
+        .venuereviewContents {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+        
+                //margin-bottom: 32px;
+                .venuereviewLeft {
+                    h5 {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: var(--black);
+                        text-transform: capitalize;
+                        margin-bottom: 5px;
+                    }
+        
+                    .week {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 200;
+                        font-size: 16px;
+                        color: var(--black);
+                        text-transform: capitalize;
+                        margin-bottom: 16px;
+                    }
+                }
+        
+                .venuereviewRight {
+                    .icon {
+                        margin-right: 10px;
+        
+                        &.star {
+                            color: var(--ratingColor);
+                        }
+                    }
+        
+                    span {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: var(--black);
+                    }
+                }
+            }
+    }
+        
+}
