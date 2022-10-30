@@ -1,0 +1,50 @@
+.venuedetailsheadContainer{
+    padding: 0px 405px;
+    padding-top: 100px;
+    padding-bottom: 44px;
+    .venuedetailsheadContents{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        .venuedetailsLeft{
+            h4{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color: var(--black);
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+
+            .icon{
+                &.address{
+                    font-size: 16px;
+                    color: var(--ratingColor);
+                    margin-right: 10px;
+                }
+            }
+
+            span{
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--black);
+                text-transform: capitalize;
+            }
+        }
+
+        .venuedetailsRight{
+            button{
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: capitalize;
+                padding: 11px 65px;
+                background-color: var(--modifySearch);
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+}
