@@ -1,0 +1,25 @@
+.searchbyPrime{
+        padding: 50px 405px;
+        .searchbyContainer{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 1110px;
+                height: 2235px;
+                background-color: var(--backgroundColor);
+                //position: absolute;
+                border-radius: 4px;
+                z-index: -10;
+                .searchtopContent{
+
+                }
+                .searchbottomContent{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: row;
+                        padding: 20px 20px;
+                }
+}
+}
