@@ -1,0 +1,162 @@
+.footerContainer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--loginNavbar);
+    margin-top: 93px;
+    .footerContents{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+
+        .leftContents{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 47%;
+            img{
+                width: 100%;
+                height: 30px;
+                margin: auto;
+                display: block;
+                cursor: pointer;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: var(--white);
+            }
+        }
+        .rightContents{
+            width:53%;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                
+                li{
+                    margin-right: 40px;
+                    span{
+                        text-transform: capitalize;
+                        text-decoration: underline;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: var(--footerHeadText);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footerContainer {
+            width: 100%;
+            height: 100%;
+    
+            .footerContents {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                .leftContents {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                        margin: 20px 0px;
+                        cursor: pointer;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                    }
+                }
+    
+                .rightContents {
+                    width: 100%;
+    
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+    
+                        li {
+                            margin-bottom: 15px;
+                            margin-right: 0px;
+    
+                            span {
+                                text-transform: capitalize;
+                                text-decoration: none;
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: var(--footerHeadText);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .footerContainer {
+            width: 100%;
+            height: 200px;
+    
+            .footerContents {
+                flex-direction: row;
+    
+                .leftContents {
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                        margin: 20px 0px;
+                        cursor: pointer;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                    }
+                }
+    
+                .rightContents {
+                    width: 100%;
+    
+                    ul {
+                        flex-direction: column;
+    
+                        li {
+                            margin-bottom: 15px;
+                            margin-right: 0px;
+    
+                            span {
+                                text-transform: capitalize;
+                                text-decoration: none;
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: var(--footerHeadText);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

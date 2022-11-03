@@ -1,19 +1,32 @@
 .offeritemContainer{
     margin-top: 31px;
+    width: 1394px;
+    height: 200px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .offeritemContents{
         padding: 25px 30px;
         box-shadow: var(--offerBoxShadow);
         border-radius: 6px;
         background-color: var(--white);
-
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        img{
+        width: 100%;
+
+        .offeritemImage{
             width: 150px;
             height: 150px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
+        
+        
         .offerInfo{
             display: flex;
             align-items: flex-start;
@@ -37,4 +50,84 @@
             }
         }  
     }
+}
+
+@media screen and (max-width: 480px){
+    .offeritemContainer {
+        width: 100%;
+        padding: 0px 10px;
+            .offeritemContents {
+                padding: 16px 10px;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 31px;
+                .offeritemImage{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    
+                    img {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+                
+                .offerInfo {
+                    width: 100%;
+                    margin-left: 0px;
+    
+                    h5 {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        font-weight: 300;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .offeritemContainer {
+            width: 100%;
+            height: auto;
+    
+            .offeritemContents {
+                padding: 16px 10px;
+                flex-direction: column;
+                width: 70%;
+                
+    
+                .offeritemImage {
+                    width: 100%;
+                    height: 250px;
+                    margin-bottom: 20px;
+    
+                    img {
+                        width: 100%;
+                        height: 250px;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                .offerInfo {
+                    width: 100%;
+                    margin-left: 0px;
+    
+                    h5 {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        font-weight: 300;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
 }

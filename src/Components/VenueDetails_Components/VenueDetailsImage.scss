@@ -1,0 +1,36 @@
+.detailsimgConatinar {
+    padding: 0px 405px;
+    margin-bottom: 71px;
+
+    .rowoneConetents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+
+        .imgPrimary {
+            width: 445px;
+            height: 324px;
+            margin-right: 32px;
+        }
+
+        .imgWide {
+            width: 633px;
+            height: 324px;
+        }
+    }
+
+
+    .rowtwoConetents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 539px;
+            height: 359px;
+
+        }
+    }
+    
+}

@@ -1,0 +1,95 @@
+.formContainer {
+    margin-top:116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        span {
+            font-family: 'Roboto',sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23.44px;
+            margin-bottom: 41px;
+            color: var(--smallText);
+        }
+
+        input {
+            border: var(--inputBorderBox);
+            width: 350px;
+            height: 40px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+
+            &::placeholder {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 12px;
+                text-transform: capitalize;
+                line-height: 14.52px;
+                color: var(--loginPlaceholderText);
+            }
+        }
+
+        .checkboxInput{
+            input{
+                width: 10px;
+                height: 10px;
+            }
+            label{
+                margin-left: 8px;
+                text-transform: capitalize;
+                span {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 300;
+                    font-size: 12px;
+                    color: var(--black);
+                }
+                
+                .termLink {
+                    font-family: 'Inter';
+                    font-weight: 300;
+                    font-size: 12px;
+                    color: var(--loginLinkText);
+                }
+            }
+            
+        }
+
+        button {
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+            width: 350px;
+            height: 40px;
+            background-color: var(--loginButton);
+            color: var(--white);
+
+        }
+
+    }
+
+    .formBottomContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .regLink {
+            text-transform: capitalize;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-style: 12px;
+            color: var(--loginLinkText);
+        }
+    }
+
+
+}

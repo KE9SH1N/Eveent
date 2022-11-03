@@ -38,3 +38,110 @@
         }
     }
 }
+
+@media screen and (max-width: 480px){
+    .cityContainer {
+            .cityContents {
+                padding: 0px 0px;
+                padding-top: 60px;
+                h4{
+                    text-align: center;
+                }
+    
+                .gridContainer {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    margin-top: 32px;
+                    margin-right: 0px;
+    
+                    .gridItem {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        h5 {
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: var(--black);
+                            text-transform: capitalize;
+                            margin-bottom: 15px;
+                        }
+    
+                        ul {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            li {
+                                margin-bottom: 12px;
+    
+                                span {
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 300;
+                                    font-size: 13px;
+                                    color: var(--black);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .cityContainer {
+            .cityContents {
+                padding: 0px 0px;
+                padding-top: 60px;
+    
+                h4 {
+                    text-align: center;
+                }
+    
+                .gridContainer {
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    row-gap: 30px;
+                    margin-top: 32px;
+                    margin-right: 0px;
+    
+                    .gridItem {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+    
+                        h5 {
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: var(--black);
+                            text-transform: capitalize;
+                            margin-bottom: 15px;
+                        }
+    
+                        ul {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+    
+                            li {
+                                margin-bottom: 12px;
+    
+                                span {
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    color: var(--black);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

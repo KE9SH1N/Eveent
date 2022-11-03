@@ -1,21 +1,36 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
+import axios from 'axios'
 
 import './VenueReview.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-import { eveentReview } from '../../data'
-
 import { Link } from 'react-router-dom'
 
 const VenueReview = () => {
+
+    const [review,setReview] = useState([]);
+
+    useEffect(()=>{
+        const fetch = async()=>{
+            try{
+                const { data } = await axios.get('http://localhost:3000/review');
+                setReview(data);
+            }
+            catch(err){
+                console.error(err);
+            }
+        };
+        fetch();
+    },[]);
   return (
       <div className='venuereviewContainer'>
           <h4>Reviews</h4>
-          {eveentReview.map(review=>{
+          {review.map(review=>{
             return(
-                <div className="venuereviewContent">
+                <div className="venuereviewContent" key={review.id}>
                     <div className="venuereviewContents">
                         <div className="venuereviewLeft">
                             <h5>{review.writerName}</h5>

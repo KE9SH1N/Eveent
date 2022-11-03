@@ -1,18 +1,32 @@
 import React from 'react'
 import './Cities.scss'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
-import { eveentCities } from '../data'
-
-import { Link } from 'react-router-dom'
 const Cities = () => {
+
+    const [city,setCity]= useState([]);
+
+    useEffect(() =>{
+        const fetch = async () => {
+            try{
+                const { data } = await axios.get('http://localhost:3000/cities');
+                setCity(data);
+            }
+            catch(err){
+                console.error(err);
+            }
+        };
+        fetch();
+    },[]);
   return (
     <div className="cityContainer">
         <div className="cityContents">
             <h4>cities</h4>
             <div className="gridContainer">
-                {eveentCities.map(cities=>{
+                  {city.map(cities=>{
                         return(
-                <div className="gridItem">
+                <div className="gridItem" key={cities.id}>
                     <h5>{cities.city}</h5>
                         <ul>
                             <li><span>{cities.hall}</span></li>

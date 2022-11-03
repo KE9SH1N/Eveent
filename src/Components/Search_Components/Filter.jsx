@@ -8,8 +8,8 @@ const Filter = () => {
       <div className="filterContent">
         <h4>38 Hall found</h4>
         <span>Short by</span>
-        <select name="" id="">
-          <option value="" selected disabled>Default</option>
+        <select name="" id="" defaultValue={'DEFAULT'}>
+          <option value="DEFAULT" disabled>Default</option>
           <option value="">Popularity</option>
           <option value="">Name(A-Z)</option>
           <option value="">Name(Z-A)</option>

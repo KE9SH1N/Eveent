@@ -5,7 +5,8 @@ import './VenueDetailsFacilities.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-const VenueDetailsFacilities = () => {
+
+const VenueDetailsFacilities = (props) => {
   return (
     <div className='venuefacilitiesContainer'>
         <div className="venuefacilitiesContents">
@@ -13,19 +14,19 @@ const VenueDetailsFacilities = () => {
             <ul>
                 <li>
                     <FontAwesomeIcon icon={faAngleRight} className='icon rightArrow' />
-                    <p>Car parking and unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    <p>{props.data.facilities1}</p>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faAngleRight} className='icon rightArrow' />
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
+                    <p>{props.data.facilities2}</p>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faAngleRight} className='icon rightArrow' />
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                    <p>{props.data.facilities3}</p>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faAngleRight} className='icon rightArrow' />
-                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                    <p>{props.data.facilities4}</p>
                 </li>
                     
             </ul>

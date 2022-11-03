@@ -1,8 +1,13 @@
 import React from 'react'
+import SignUpForm from '../Components/Login_Components/SignUpForm'
+import LoginNavbar from '../Layouts/LoginNavbar'
 
 const Register = () => {
   return (
-    <div>sign up</div>
+    <div>
+      <LoginNavbar/>
+      <SignUpForm/>
+    </div>
   )
 }
 

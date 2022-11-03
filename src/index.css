@@ -1,13 +1,92 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Urbanist:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: all .2s linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+  --black:#000000;
+  --white:#FFFFFF;
+  --headText:#001F2B;
+  --smallText:#161616;
+  --lightText:#505050;
+
+
+  /*login & signup*/
+  --loginNavbar:#01202C;
+  --loginPlaceholderText:#343434;
+  --loginLinkText:#60A4BF;
+  --loginButton:#60A4BF;
+  --inputBorderBox:2px solid #60A4BF;
+
+  /*login & signup social icon*/
+  --loginSoicialIconBorder:1px solid #D9D9D9;
+  --facebook:#4267B2;
+  --googlePlus:#EA4335;
+  --twitter:#00ACEE;
+  --regIcons:#838383;
+
+
+  /*navbar*/
+  --navbar:#C8B027;
+  --navbarMenuRegText:#65570D;
+  --navbarText:#001F2B;
+
+  /*hero*/
+  --searchFilterBox:#D9D9D9;
+  --categoryBoxShadow:0px 0px 4px #00000080;
+  --dateBackground:#D9D9D9;
+  --SearchIcon:#233851;
+
+  /*hero alart*/ 
+  --iconColor:#FF1400;
+  --borderBox:3px solid #EA4335;
+
+  /*offer*/
+  --offerBoxShadow:1px 1px 15px #00000026;
+
+  /*services*/
+  --serviceTextShadow:0px 7px 10px #0000004d;
+
+  /*footer*/
+  --footerHeadText:#FBFBFB;
+
+
+  /*search item page*/
+  --backgroundColor:#F5F5F7;
+  --itemBoxShadow:0px 4px 4px #0000001a;
+  --ratingColor:#60A4BF;
+  --modifySearch:#FEE15B;
+
+  /*Item details*/
+  --oldPrice:#838383;
+
+
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
 }
