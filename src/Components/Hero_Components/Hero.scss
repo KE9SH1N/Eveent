@@ -29,3 +29,20 @@
         }
     }
 }
+
+@media screen and (max-width: 480px){
+    .heroContainer {
+            img {
+                
+            }
+    
+            .heroheadText {
+               
+                h3 {
+                    font-weight: 400;
+                    font-size: 32px;
+                    margin-top: 150px;
+                }
+            }
+        }
+}

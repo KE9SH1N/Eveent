@@ -27,7 +27,7 @@ const Search = () => {
                 <input type="text" placeholder='dd/mm/yy' />
                 <FontAwesomeIcon icon={faCalendar} className='icon calendar' />
             </div>
-            <Link to="/searchresult"><button><FontAwesomeIcon icon={faMagnifyingGlass} className='icon calendar' /></button></Link>
+            <Link to="/searchresult"><button><FontAwesomeIcon icon={faMagnifyingGlass} className='icon search' /></button></Link>
         </div>
     </div>
   )
