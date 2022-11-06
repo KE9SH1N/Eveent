@@ -10,6 +10,7 @@
         }
     
     .viewMore{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -26,14 +27,20 @@
     }
     .venuereviewContent{
         margin-bottom: 32px;
-        p {
+        width: 1110px;
+        .reviewBody{
+            width: 100%;
+            p {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
                 font-size: 14px;
                 color: var(--lightText);
                 text-transform: capitalize;
             }
+        }
+        
         .venuereviewContents {
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -41,6 +48,7 @@
         
                 //margin-bottom: 32px;
                 .venuereviewLeft {
+                    width: 90%;
                     h5 {
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
@@ -61,6 +69,10 @@
                 }
         
                 .venuereviewRight {
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
                     .icon {
                         margin-right: 10px;
         
@@ -79,4 +91,60 @@
             }
     }
         
+}
+
+@media screen and (max-width: 480px){
+    .venuereviewContainer {
+            padding: 0px 20px;
+            width: 100%;
+    
+            h4 {
+                font-size: 20px;
+            }
+    
+            .viewMore {
+    
+                button {
+                    font-size: 16px;
+                }
+            }
+    
+            .venuereviewContent {
+                width: 100%;
+    
+                .reviewBody {
+    
+                    p {
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+                }
+    
+                .venuereviewContents {
+                    .venuereviewLeft {
+                        width: 90%;
+    
+                        h5 {
+                            font-size: 18px;
+                        }
+    
+                        .week {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+                    }
+    
+                    .venuereviewRight {
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
 }

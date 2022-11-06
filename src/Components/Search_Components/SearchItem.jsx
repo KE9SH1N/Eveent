@@ -52,12 +52,13 @@ const SearchItem = () => {
                 </div>
 
                 <div className="rightInfo">
-                  <FontAwesomeIcon icon={faStar} className='icon star' />
-                  <FontAwesomeIcon icon={faStar} className='icon star' />
-                  <FontAwesomeIcon icon={faStar} className='icon star' />
-                  <FontAwesomeIcon icon={faStar} className='icon star' />
-                  <FontAwesomeIcon icon={faStar} className='icon star' />
-
+                  <div> 
+                    <FontAwesomeIcon icon={faStar} className='icon star' />
+                    <FontAwesomeIcon icon={faStar} className='icon star' />
+                    <FontAwesomeIcon icon={faStar} className='icon star' />
+                    <FontAwesomeIcon icon={faStar} className='icon star' />
+                    <FontAwesomeIcon icon={faStar} className='icon star' />
+                    </div>
                   <h5>৳{item.regularPrice}</h5>
 
                   <h3>৳ {item.offerPrice}</h3>

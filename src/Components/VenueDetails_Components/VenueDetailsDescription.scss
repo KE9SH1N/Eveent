@@ -1,6 +1,7 @@
 .venuedescriptoinContainer{
     padding: 0px 401px;
     .venuedescriptionContents{
+        width: 1110px;
         h4{
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
@@ -8,6 +9,7 @@
             color: var(--black);
             margin-bottom: 32px;
             text-transform: capitalize;
+            width: 100%;
         }
         p{
             font-family: 'Roboto', sans-serif;
@@ -16,6 +18,30 @@
             color: var(--lightText);
             margin-bottom: 32px;
             text-transform: capitalize;
+            text-align: justify;
+            width: 100%;
         }
     }
+}
+
+@media screen and (max-width: 480px){
+    .venuedescriptoinContainer {
+            padding: 0px 0px;
+    
+            .venuedescriptionContents {
+                width: 100%;
+                padding: 0px 20px;
+                h4 {
+                    font-size: 20px;
+                }
+    
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
 }

@@ -14,9 +14,11 @@ const VenuedetailsHead = (props) => {
         <div className="venuedetailsheadContents">
               <div className="venuedetailsLeft">
                 <h4>{props.data.title}</h4>
-                <FontAwesomeIcon icon={faLocationDot} className='icon address' />
-                <span>{props.data.location}, {props.data.city} - {props.data.postalcode}</span>
-              </div>
+                <div>
+                  <FontAwesomeIcon icon={faLocationDot} className='icon address' />
+                  <span>{props.data.location}, {props.data.city} - {props.data.postalcode}</span>
+                </div>
+                </div>
               <div className="venuedetailsRight">
                 <Link to=""><button>book now</button></Link>
               </div>

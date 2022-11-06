@@ -8,7 +8,7 @@ const LoginNavbar = () => {
   return (
     <div className='navContainer'>
       <div className="navbar">
-        <Link to="/"><img src={Logo} alt="logo img"/></Link>
+        <Link to="/"><img src={Logo} className="logoImg" alt="logo img"/></Link>
       </div>
     </div>
   )

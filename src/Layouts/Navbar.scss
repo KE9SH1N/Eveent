@@ -1,6 +1,7 @@
 .navbarContainer {
     width: 100%;
-    height: 90px;
+    height:70px;
+    //background-color: red;
     .navbarContent{
         display: flex;
         align-items: center;
@@ -8,10 +9,9 @@
         height: 100%;
         background-color: var(--navbar);
         .leftContent{
-            width: 30%;
+            width: 50%;
             img{
                 width: 20%;
-                height: 30px;
                 cursor: pointer;
                 margin: auto;
                 display: block;
@@ -48,13 +48,15 @@
     
 .navbarContainer {
         width: 100%;
-        height: 70px;
-
         .navbarContent {
+            width: 100%;
             .leftContent {
-                width: 50%;
+                width: 100%;
                 img {
-                    width: 50%;
+                    margin: 0;
+                    display: flex;
+                    margin-left: 40px;
+                    width: 40%;
                 }
             }
 
@@ -66,11 +68,11 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     .navbarContainer {
         width: 100%;
-        height: 100px;
+        height: 90px;
 
         .navbarContent {
             .leftContent {

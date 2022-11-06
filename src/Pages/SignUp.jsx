@@ -1,5 +1,5 @@
 import React from 'react'
-import SignUpForm from '../Components/Login_Components/SignUpForm'
+import SignUpForm from '../Components/Login_Components/Signup/SignUpForm'
 import LoginNavbar from '../Layouts/LoginNavbar'
 
 const Register = () => {

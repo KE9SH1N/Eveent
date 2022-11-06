@@ -61,3 +61,35 @@
         }
     }
 }
+
+
+@media screen and (max-width: 480px){
+    .paginationContainer {
+            width: 100%;
+    
+            .paginationContents {
+                width: 100%;
+                justify-content: center;
+    
+                .icon {
+                    font-size: 14px;
+                }
+    
+                .pageNumber {
+                    width: 80%;
+    
+                    li {
+                        span {
+                            font-size: 14px;
+                            padding: 2px 4px;
+                            border-radius: 3px;
+                            border: 0.5px solid #000000;
+                        }
+                    }
+                }
+            }
+            .showitemNumber {
+                display: none;
+            }
+        }
+}

@@ -38,3 +38,42 @@
         }
     }
 }
+
+@media screen and (max-width: 480px){
+    .venuefacilitiesContainer {
+            padding: 0px 0px;
+            margin-bottom: 480px;
+    
+            .venuefacilitiesContents {
+                width: 100%;
+                padding: 0px 20px;
+    
+                h4 {
+                    font-size: 20px;
+                }
+    
+                ul {
+    
+                    li {
+    
+                        p {
+                            font-size: 14px;
+    
+                        }
+    
+                        .icon {
+                            margin-right: 18px;
+    
+                            &.rightArrow {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+}

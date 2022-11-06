@@ -1,20 +1,20 @@
 .searchbyPrime{
         padding: 50px 405px;
+        width: 100%;
         .searchbyContainer{
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
-                width: 1110px;
-                height: 2235px;
                 background-color: var(--backgroundColor);
-                //position: absolute;
                 border-radius: 4px;
-                z-index: -10;
                 .searchtopContent{
+                        width: 100%;
 
                 }
                 .searchbottomContent{
+                        width: 100%;
+                        height: auto;
                         display: flex;
                         align-items: flex-start;
                         justify-content: center;
@@ -22,4 +22,26 @@
                         padding: 20px 20px;
                 }
 }
+}
+
+@media screen and (max-width: 480px){
+        .searchbyPrime {
+                padding: 10px 0px;
+
+                .searchbyContainer{
+                        width: 100%;
+                      .searchtopContent{
+                        width: 100%;
+                      }
+
+                      .searchbottomContent{
+                        width: 100%;
+                        flex-direction: column;
+                      }
+                }
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
 }

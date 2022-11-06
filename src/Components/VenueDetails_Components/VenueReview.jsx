@@ -41,7 +41,7 @@ const VenueReview = () => {
                             <span>{review.rating}</span>
                         </div>
                     </div>
-                    <div>
+                    <div className='reviewBody'>
                         <p>{review.paragraph}</p>
                     </div>
                 </div>

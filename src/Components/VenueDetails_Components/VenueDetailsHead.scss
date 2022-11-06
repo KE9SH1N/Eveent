@@ -3,11 +3,14 @@
     padding-top: 100px;
     padding-bottom: 44px;
     .venuedetailsheadContents{
+        width: 1110px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
         .venuedetailsLeft{
+            width: 80%;
+            padding: 0px 10px;
             h4{
                 font-family: 'Roboto', sans-serif;
                 font-weight: 700;
@@ -35,7 +38,12 @@
         }
 
         .venuedetailsRight{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             button{
+                width: 100%;
                 font-family: 'Inter', sans-serif;
                 font-weight: 600;
                 font-size: 14px;
@@ -44,7 +52,52 @@
                 background-color: var(--modifySearch);
                 border-radius: 4px;
                 cursor: pointer;
+                display: inline-block;
+                position: relative;
             }
         }
     }
+}
+
+@media screen and (max-width: 480px){
+    .venuedetailsheadContainer {
+            padding: 0px 0px;
+            padding-top: 50px;
+            padding-bottom: 44px;
+            width: 100%;
+    
+            .venuedetailsheadContents {
+                width: 100%;
+                flex-direction: column;
+    
+                .venuedetailsLeft {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                    h4 {
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                    .icon{
+                    }
+    
+                    span {
+                        font-size: 12px;
+                    }
+                }
+    
+                .venuedetailsRight {
+                    width: 100%;
+                    button {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
 }
