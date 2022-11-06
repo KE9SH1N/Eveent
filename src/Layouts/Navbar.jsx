@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 
 import { Link } from 'react-router-dom'
-import mainLogo from "../assets/mainLogo.png"
+import mainLogo from "../Assets/mainLogo.png"
 
 const Navbar = () => {
   return (

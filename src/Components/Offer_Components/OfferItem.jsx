@@ -1,6 +1,6 @@
 import React from 'react'
 import './OfferItem.scss'
-import Offer1 from '../../assets/offer1.jpeg'
+import Offer1 from '../../Assets/offer1.jpeg'
 import { Link } from 'react-router-dom'
 
 const OfferItem = () => {

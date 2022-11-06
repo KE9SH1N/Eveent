@@ -2,7 +2,7 @@ import React from 'react'
 import './LoginNavbar.scss'
 
 import { Link } from 'react-router-dom'
-import Logo from "../assets/logo.png"
+import Logo from "../Assets/logo.png"
 
 const LoginNavbar = () => {
   return (

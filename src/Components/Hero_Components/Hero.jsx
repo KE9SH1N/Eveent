@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.scss'
 
 
-import Background from "../../assets/heroBackground.jpg"
+import Background from "../../Assets/heroBackground.jpg"
 import SearchBar from "./SearchBar"
 
 const Hero = () => {
